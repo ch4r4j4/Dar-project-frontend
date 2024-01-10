@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react';
 import './App.css'
+/*const LoginForm = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+ 
+  const handleSubmit = (e) => {
+     e.preventDefault();
+     console.log('Email:', email);
+     console.log('Password:', password);
+  };
+};*/
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    /*<form onSubmit={handleSubmit}>
+       <label>
+         Email:
+         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+       </label>
+       <br />
+       <label>
+         Password:
+         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+       </label>
+       <br />
+       <button type="submit">Login</button>
+    </form>*/
+    <form>
+      <label htmlFor="">nombre
+      <input type="text" name="user" id="user" placeholder='mi nombre es' /></label>
+
+    </form>
+    )
 }
 
 export default App
