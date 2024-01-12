@@ -11,10 +11,14 @@ function App() {
         Nombre
         </label>
         <input type="text"/>
-        <label htmlFor="contraseña">contraseña</label>
+        <label htmlFor="contraseña">
+          contraseña
+        </label>
         <input type="email"/>
     </form>
     )
 }
+
+/**hoy no vanzamos nada por no decir nada siepre pero es momento de realizar muchas actividades */
 
 export default App
