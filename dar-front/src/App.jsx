@@ -6,15 +6,21 @@ import './App.css'
 function App() {
   return (
     <form>
-      {/* nombre*/}
-      <label htmlFor='nombre'>
+        {/* nombre*/}
+        <label htmlFor='nombre'>
         Nombre
         </label>
         <input type="text"/>
-        <label htmlFor="contraseña">
-          contraseña
+        {/* correo*/}
+        <label htmlFor="correo">
+          email
         </label>
         <input type="email"/>
+        {/* constraseña*/}
+        <label htmlFor="password">
+          password
+        </label>
+        <input type="password" name="" id="" />
     </form>
     )
 }
