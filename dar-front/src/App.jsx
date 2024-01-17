@@ -1,9 +1,13 @@
+
 import React, { useState } from 'react';
+import {useForm} from 'react-hook-form';
 import './App.css'
 
 
-
+/*ningun cambio por hoy di creo que ya fuimos no entiendo muchas cosas de react*/
 function App() {
+
+  const{}=useForm();
   return (
     <form>
         {/* nombre*/}
