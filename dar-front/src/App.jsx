@@ -2,36 +2,48 @@
 import React, { useState } from 'react';
 import {useForm} from 'react-hook-form';
 import './App.css'
+import image from './assets/react.svg'
+
 
 
 /*ningun cambio por hoy di creo que ya fuimos no entiendo muchas cosas de react*/
 function App() {
+  const { register, handleSubmit, errors } = useForm();
 
-  const{}=useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
-    <form>
-        {/* nombre*/}
-        <label htmlFor='nombre'>
-        Nombre
-        </label>
-        <input type="text"/>
-        {/* correo*/}
-        <label htmlFor="correo">
-          email
-        </label>
-        <input type="email"/>
-        {/* constraseña*/}
-        <label htmlFor="password">
-          password
-        </label>
-        <input type="password" name="" id="" />
+    <section className='firstSection'>
+    <div>
+      <img src={image} alt="logo" />
+    </div>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <div className="form-group">
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          ref={register({ required: 'Email is required' })}
+          className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+        />
+        {errors.email && <div className="invalid-feedback">{errors.email.message}</div>}
+      </div>
+      <div className="form-group">
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          ref={register({ required: 'Password is required' })}
+          className={`form-control ${errors.password ? 'is-invalid' : ''}`}
+        />
+        {errors.password && <div className="invalid-feedback">{errors.password.message}</div>}
+      </div>
+      <button type="submit" className="btn btn-primary">Login</button>
     </form>
+    </section>
     )
 }
-
-/**hoy no vanzamos nada por no decir nada siepre pero es momento de realizar muchas actividades
- * segundo dia sin avanzar con respecto al proyecto del DAR pero tengo que darle con mas ganas en la parte donde tengo maas tiempo como por ejemplo en los sabados domingos
-
-tercer dia en el que tuve que avanzar mañana si o si tengo que empezar a trabajar esto*/
 
 export default App
