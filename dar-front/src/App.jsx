@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import {useForm} from 'react-hook-form';
 import './App.css'
 import image from './assets/react.svg'
+import {Testimonio} from './components/testimonio';
 
 
 
@@ -15,11 +16,11 @@ function App() {
   };*/
 
   return (
-   <div className='firstSection'>
+   /*<div className='firstSection'>
     <div>
       <img src={image} alt="logo" />
     </div>
-    <form /*onSubmit={handleSubmit(onSubmit)}*/>
+    <form /*onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group">
         <label htmlFor="email">Email</label>
         <input
@@ -36,7 +37,8 @@ function App() {
       </div>
       <button type="submit" className="btn btn-primary">Login</button>
     </form>
-    </div>
+    </div>*/
+    <Testimonio/>
     )
 }
 
