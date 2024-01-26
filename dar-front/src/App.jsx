@@ -26,3 +26,5 @@ function App() {
 }
 
 export default App
+
+/* estamos terribles estos ultimos deias no hemos avanzado nada con respecto a esto tenemos que mejorar y avnazar un poco con respecto a este tema */
