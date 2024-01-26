@@ -2,18 +2,17 @@ import React from "react";
 import image from '../assets/react.svg'
 import './Testimonio.css'
 
-export function Testimonio(){
+export function Testimonio(props){
     return(
         <div className="Tarjeta">
-            <img src={image} alt="foto" />
+            <img className="logoreact" src={image} alt="foto" />
             <div className="Info">
-                <h1 className="Nombre">Paul</h1>
-                <h2 className="where">Nacido en 98 de Puno</h2>
-                <p>soy un desarrollador front end developer que Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequuntur voluptatibus fuga nisi praesentium, recusandae dolor molestiae ipsa temporibus numquam! Incidunt neque at necessitatibus obcaecati, aut a cumque sed! Fugiat!</p>
+                <h1 className="Nombre">{props.nombre}</h1>
+                <h2 className="where">Nacio en {props.lugar} en el año {props.año}</h2>
+                <p>{props.testimonio}</p>
             </div>
         </div>
     );
 }
-
 
 /*tengo que practicar un poco mas de css*/

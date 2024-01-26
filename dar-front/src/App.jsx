@@ -16,31 +16,13 @@ function App() {
   };*/
 
   return (
-   /*<div className='firstSection'>
-    <div>
-      <img src={image} alt="logo" />
-    </div>
-    <form /*onSubmit={handleSubmit(onSubmit)}>
-      <div className="form-group">
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          name="password"
-        />
-      </div>
-      <button type="submit" className="btn btn-primary">Login</button>
-    </form>
-    </div>*/
-    <Testimonio/>
+    <Testimonio
+      nombre = 'Paul benjamin Charaja Torres'
+      lugar = 'Peru'
+      año ='1999'
+      testimonio = 'mi desrrollo a ido avanzando mucho pero las ultimas fechas a sido muy dificil tener ese eanimo de continuar pero el detalle estan en darme mucho mas animo en este aspecto'
+    />
     )
 }
 
 export default App
-/*por el momento nos falta configurar correctamente lo del hook-form*/
