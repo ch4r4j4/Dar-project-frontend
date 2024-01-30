@@ -5,7 +5,7 @@ import './App.css'
 import image from './assets/react.svg'
 import {Testimonio} from './components/testimonio';
 import StepForm from './components/Stepform';
-
+import Contador from './components/Contador';
 
 
 /*ningun cambio por hoy di creo que ya fuimos no entiendo muchas cosas de react*/
@@ -18,19 +18,19 @@ function App() {
 
   return (///solo se puede devolver un componente si quieres mas componentes tenemos que unificarlos en ta solo un elemento
     <div>
-    <Testimonio
-      nombre = 'Paul benjamin Charaja Torres'
-      lugar = 'Peru'
-      año ='1999'
-      testimonio = 'mi desrrollo a ido avanzando mucho pero las ultimas fechas a sido muy dificil tener ese eanimo de continuar pero el detalle estan en darme mucho mas animo en este aspecto'
-    />
-    <Testimonio
-      nombre = 'Paul benjamin Charaja Torres'
-      lugar = 'Peru'
-      año ='1999'
-      testimonio = 'mi desrrollo a ido avanzando mucho pero las ultimas fechas a sido muy dificil tener ese eanimo de continuar pero el detalle estan en darme mucho mas animo en este aspecto'
-    />
-    <StepForm/> 
+        
+      {
+      /*
+      <Testimonio
+        nombre = 'Paul benjamin Charaja Torres'
+        lugar = 'Peru'
+        año ='1999'
+        testimonio = 'mi desrrollo a ido avanzando mucho pero las ultimas fechas a sido muy dificil tener ese eanimo de continuar pero el detalle estan en darme mucho mas animo en este aspecto'
+      />
+      <StepForm/> 
+      */
+      }
+  <Contador/>
   </div>
     )
 }

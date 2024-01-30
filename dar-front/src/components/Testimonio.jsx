@@ -1,6 +1,6 @@
 import React from "react";
 import image from '../assets/react.svg'
-import './Testimonio.css'
+import '../css/Testimonio.css'
 
 export function Testimonio(props){
     return(
