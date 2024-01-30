@@ -4,6 +4,7 @@ import {useForm} from 'react-hook-form';
 import './App.css'
 import image from './assets/react.svg'
 import {Testimonio} from './components/testimonio';
+import StepForm from './components/Stepform';
 
 
 
@@ -29,7 +30,8 @@ function App() {
       año ='1999'
       testimonio = 'mi desrrollo a ido avanzando mucho pero las ultimas fechas a sido muy dificil tener ese eanimo de continuar pero el detalle estan en darme mucho mas animo en este aspecto'
     />
-    </div>
+    <StepForm/> 
+  </div>
     )
 }
 
