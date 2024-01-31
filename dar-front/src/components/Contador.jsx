@@ -3,11 +3,11 @@ import logo from '../assets/react.svg'
 
 function Contador(){
     return(
-
-        <div>
-         <img src={logo} alt="" />
-         <h1>Hola mundo</h1>   
-        </div>
+      <React.Fragment>
+        <img src={logo} alt="" />
+        <h1>Hola mundo</h1> 
+        <h2>Despues de esto tenemos que realizar muchos proyectos, creo que ya podemos ir realizando las copias de los elementos que hay en internet </h2>  
+      </React.Fragment>
     )
 }
 
